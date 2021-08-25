@@ -10,7 +10,7 @@ require('dotenv').config();
 app.set('port', (process.env.PORT || 3000));
 
 console.log(process.env.PORT)
-console.log('object')
+console.log('object 123')
 // setup our express application
 app.use(morgan('dev')); // log every request to the console.
 app.use(bodyParser.urlencoded({ extended:false }));

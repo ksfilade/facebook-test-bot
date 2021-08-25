@@ -5,7 +5,7 @@ const sendMessage = require('../templates/sendMessage');
  module.exports = function processPostback(event) {
      const senderID = event.sender.id;
      const payload = event.postback.payload;
-
+        console.log(payload)
      if (payload === 'WELCOME') {
         request({
             url: "https://graph.facebook.com/v2.6/" + senderID,
